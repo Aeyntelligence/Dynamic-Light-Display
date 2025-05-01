@@ -1,0 +1,52 @@
+# Project 4: Dynamic Light Display Controller
+
+This project allows users to control RGB LED lights in real-time via a Unity interface.
+Unity sends serial commands to an Arduino, which then changes light colors and patterns
+accordingly.
+
+## Arduino Setup
+
+### 1. Hardware Required:
+- Arduino Uno (or compatible board)
+- RGB LED (Common cathode/anode)
+- Resistors (220–330Ω for each color pin)
+- Breadboard and jumper wires
+- USB cable for Arduino
+
+### 2. Wiring:
+- Red Pin of RGB LED → Pin 9 on Arduino
+- Green Pin of RGB LED → Pin 10 on Arduino
+- Blue Pin of RGB LED → Pin 11 on Arduino
+- Common cathode → GND (via resistor if needed)
+
+### 3. Upload Arduino Code
+
+Unity Project Setup
+
+### 1. Create New Unity Project
+- Open Unity Hub
+- Click New Project
+- Choose **3D Core**
+- Name the project: `DynamicLightControl`
+- Click Create
+
+### 2. Setup UI
+- In the Hierarchy
+  - Right-click → UI → Canva
+  - Right-click Canvas → UI → Button(Repeat 4 times)
+- Rename the buttons:
+  - `RedBtn`
+  - `GreenBtn`
+  - `BlueBtn`
+  - `PatternBtn`
+- In each button’s Text field, change the display text:
+  - "Red Light"
+  - "Green Light"
+  - "Blue Light"
+  - "Pattern Effect"
+
+### 3. Create & Add C# Script
+
+- In **Assets**, create a folder: `Scripts`
+- Right-click → Create → C# Script → Name it: `control.cs`
+- Paste the control.cs code inside `control.cs`file in unity
