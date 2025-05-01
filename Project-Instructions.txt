@@ -50,3 +50,15 @@ Unity Project Setup
 - In **Assets**, create a folder: `Scripts`
 - Right-click → Create → C# Script → Name it: `control.cs`
 - Paste the control.cs code inside `control.cs`file in unity
+
+### 4. Assign Buttons to Script
+In Hierarchy:
+Right-click → Create Empty → Name it: Manager
+Drag the LightControl.cs script onto Manager
+Select Manager in the Hierarchy
+In the Inspector, assign each UI Button to the corresponding public field (RedBtn, GreenBtn, etc.)
+
+### 5. Set API Compatibility
+Go to Edit → Project Settings → Player → Other Settings
+Change API Compatibility Level to .NET Framework
+Save project and restart Unity
