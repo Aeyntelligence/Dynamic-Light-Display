@@ -4,7 +4,7 @@ This project allows users to control RGB LED lights in real-time via a Unity int
 Unity sends serial commands to an Arduino, which then changes light colors and patterns
 accordingly.
 
-## Arduino Setup
+## Arduino Setup:-
 
 ### 1. Hardware Required:
 - Arduino Uno (or compatible board)
